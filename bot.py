@@ -9,11 +9,11 @@ STATS_FILE = os.path.join(r"C:\Users\Conner Altizer\PythonCode\ModdiScape", "use
 FLAVOR_TEXT_FILE = os.path.join(r"C:\Users\Conner Altizer\PythonCode\ModdiScape", "user_stat_flavor_text.json")
 MODDI_FLAVOR_TEXT_FILE = os.path.join(r"C:\Users\Conner Altizer\PythonCode\ModdiScape", "moddi_stat_flavor_text.json")
 COOLDOWN_TIME = 6 * 60 * 60 #6 hours in seconds
-BOT_TOKEN = "MTM1MDIwMjc5NDQwOTMyODY3MA.GEc8cf.HWUpbxJb6URGQlPt0M_1OFpl5aQw-H29mc_kfk"
-AUTHORIZED_USER_ID = 180794859374903296
+BOT_TOKEN = ""
+AUTHORIZED_USER_ID = 0
 SKILL_NAMES = ["Woodcutting", "Combat", "Fishing", "Mining", "Cooking", "Hunter", "Construction", "Prayer", "Crafting", "Thieving", "Farming"]
-CHANNEL_ID = 1355250037772255355
-RIVAL_USER_ID = 166283676441772033
+CHANNEL_ID = 0
+RIVAL_USER_ID = 0
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -662,5 +662,6 @@ async def credits(ctx):
 async def on_ready():
     print(f'Logged in as {bot.user}')
     daily_rival_increase.start()
+
 
 bot.run(BOT_TOKEN)
